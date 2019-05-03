@@ -22,3 +22,7 @@
 .btn-success{box-shadow: 0 0 0 6px #268826;}
 .btn-danger{box-shadow: 0 0 0 6px #a4211d;}
 .atblock{margin:5px;background: #fff;}
+.displayvalues{color:#fff;font-size:16px;text-align: center}
+.displayvalues div{padding:10px 5px;}
+.buy_class{background:#449d44;box-shadow: 0 0 0 3px #268826;}
+.sell_class{background: #c9302c; box-shadow: 0 0 0 3px #a4211d;}

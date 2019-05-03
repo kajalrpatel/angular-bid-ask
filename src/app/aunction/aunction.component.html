@@ -3,26 +3,36 @@
   <div class="col-sm-12 col-lg-6">
     <div class=" bluesec">
       <div class="col-lg-6 last">
-        <select class="form-control">
+        <select class="form-control" id='curr_select' >
           <option *ngFor='let i of currency' [value]="i"> {{i}}</option>
         </select>
       </div>
       <div class="row priceblock">
        <div class="col-lg-5 atblock">
           <div>
-            <p>1.34<span>56</span>9</p>
+            <p>1.{{price11}}<span>{{price12}}</span>{{price13}}</p>
           </div>
-          <input type='button' class='btn btn-success' value='Bid'/>
+          <input type='button' class='btn btn-success' value='Bid' (click) ="auction_action(price1,'b')"/>
         </div>
          <div class="col-lg-5 atblock pull-right">
           <div>
-            <p>1.34<span>56</span>9</p>
+             <p>1.{{price21}}<span>{{price22}}</span>{{price23}}</p>
           </div>
-           <input type='button' class='btn btn-danger' value='Ask'/>
+           <input type='button' class='btn btn-danger' value='Ask' />
         </div>
       </div>
      </div>
   </div>
+  <div class="col-sm-12 col-lg-5 displayvalues" [innerHTML]="buysell">
+    <div class="buy_class">
+        <p>jkldk</p>
+        <p>jkldk</p>
+      </div>
+      <div class="sell_class">
+        <p>jkldk</p>
+        <p>jkldk</p>
+      </div>
+    </div>
 </section>
 <p>
 
