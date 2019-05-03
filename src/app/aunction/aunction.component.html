@@ -1,8 +1,30 @@
-<section class='row'>
-  <div class='col-lg-3'>
-    
+<div class="content-wrapper">
+<section class="content">
+  <div class="col-sm-12 col-lg-6">
+    <div class=" bluesec">
+      <div class="col-lg-6 last">
+        <select class="form-control">
+          <option *ngFor='let i of currency' [value]="i"> {{i}}</option>
+        </select>
+      </div>
+      <div class="row priceblock">
+       <div class="col-lg-5 atblock">
+          <div>
+            <p>1.34<span>56</span>9</p>
+          </div>
+          <input type='button' class='btn btn-success' value='Bid'/>
+        </div>
+         <div class="col-lg-5 atblock pull-right">
+          <div>
+            <p>1.34<span>56</span>9</p>
+          </div>
+           <input type='button' class='btn btn-danger' value='Ask'/>
+        </div>
+      </div>
+     </div>
   </div>
 </section>
 <p>
 
 </p>
+<div>
