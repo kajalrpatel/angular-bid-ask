@@ -31,11 +31,10 @@ export class AunctionComponent implements OnInit {
     const curr = (<HTMLSelectElement>document.getElementById('curr_select')).value;
   if(bid=='b'){
     this.appendedHtml = '<div class="buy_class">   <p>Buy 200,000,000</p><p>'+curr+' @ '+price+'</p></div>';
-  }
-  if(bid=='s'){
+  }else if(bid=='a'){
     this.appendedHtml = '<div class="sell_class">   <p>Sell 200,000,000</p><p>'+curr+' @ '+price+'</p></div>';
   }
   this.buysell = this.buysell + this.appendedHtml;
-  //console.log(curr + price +bid);
+  console.log(curr + price +bid);
   }
 }
