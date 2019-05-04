@@ -24,4 +24,12 @@
 .atblock{margin:5px;background: #fff;}
 .displayvalues{color:#fff;font-size:16px;text-align: center}
 .displayvalues div{padding:10px 5px;}
-.buy_class{box-shadow: 0 0 0 3px #268826;}
+
+:host::ng-deep.sell_class{background: #c9302c; box-shadow: 0 0 0 3px #a4211d;}
+:host::ng-deep.buy_class{
+background:#449d44;box-shadow: 0 0 0 3px #268826;
+}
+
+@media(max-width:1200px){
+  .pull-right{float:none !important}
+}
